@@ -1,0 +1,22 @@
+{
+    "name": "video-editors-telegram-bot",
+    "description": "Telegram bot for video editors with review and payment system",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "vlucas/phpdotenv": "^5.5",
+        "monolog/monolog": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Developer",
+            "email": "dev@example.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
