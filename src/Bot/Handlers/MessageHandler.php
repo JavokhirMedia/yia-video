@@ -79,9 +79,6 @@ class MessageHandler
             case 'awaiting_phone':
                 if (isset($message['contact'])) {
                     $phoneNumber = $message['contact']['phone_number'];
-                    <?php
-// src/Bot/Handlers/MessageHandler.php (continued)
-
                     $this->userController->setPhoneNumber($telegramId, $phoneNumber);
                     $this->userController->completeRegistration($telegramId);
                     $this->bot->sendMessage($chatId, "✅ Registration completed successfully! You can now use the bot to submit videos for review.", [
