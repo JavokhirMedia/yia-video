@@ -1,5 +1,5 @@
 {
-    "name": "video-editors-telegram-bot",
+    "name": "john/video_bot",
     "description": "Telegram bot for video editors with review and payment system",
     "type": "project",
     "require": {

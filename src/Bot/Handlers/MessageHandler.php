@@ -20,10 +20,10 @@ class MessageHandler
     public function __construct(TelegramBot $bot)
     {
         $this->bot = $bot;
-        $this->userController = new UserController();
-        $this->videoController = new VideoController();
-        $this->balanceController = new BalanceController();
-        $this->adminController = new AdminController();
+        $this->userController = new UserController($this->bot);
+        $this->videoController = new VideoController($this->bot);
+        $this->balanceController = new BalanceController($this->bot);
+        $this->adminController = new AdminController($this->bot);
     }
     
     public function handle(array $message): void
